@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-c5h-74l8wu6htawfpo8md%289y$ln4xtmxxu77u4^kf$gsthg0
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+# CSRF_TRUSTED_ORIGINS = ['https://website.herokuapp.com', 'https://127.0.0.1:8000']
 
 # Application definition
 
@@ -82,8 +82,9 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+
 DATABASES = {
-    'default': dj_database_url.config(default='sqlite://db/mydatabase')
+    'default': dj_database_url.config(default='sqlite://db/db.sqlite3')
 }
 
 
