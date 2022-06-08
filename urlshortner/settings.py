@@ -26,8 +26,8 @@ SECRET_KEY = 'django-insecure-c5h-74l8wu6htawfpo8md%289y$ln4xtmxxu77u4^kf$gsthg0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-# CSRF_TRUSTED_ORIGINS = ['https://website.herokuapp.com', 'https://127.0.0.1:8000']
+ALLOWED_HOSTS = ['urls-shortneer.herokuapp.com', '127.0.0.1:8000']
+CSRF_TRUSTED_ORIGINS = ['https://urls-shortneer.herokuapp.com', 'https://127.0.0.1:8000']
 
 # Application definition
 
